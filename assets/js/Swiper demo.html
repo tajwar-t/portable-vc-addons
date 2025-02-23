@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!-- saved from url=(0055)https://swiperjs.com/demos/050-pagination-progress/core -->
+<html lang="en"><head><meta http-equiv="Content-Type"
+      content="text/html; charset=UTF-8">
+
+    <title>Swiper demo</title>
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="./Swiper demo_files/swiper-bundle.min.css">
+
+    <!-- Demo styles -->
+    <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 50%;
+      height: 50%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+  </head>
+
+  <body data-new-gr-c-s-check-loaded="14.1094.0" data-gr-ext-installed>
+    <!-- Swiper -->
+    <div
+      class="swiper mySwiper swiper-initialized swiper-horizontal swiper-backface-hidden">
+      <div class="swiper-wrapper" id="swiper-wrapper-3c7f10d0911a7b1062"
+        aria-live="polite"
+        style="transition-duration: 0ms; transform: translate3d(-6368px, 0px, 0px); transition-delay: 0ms;">
+        <div class="swiper-slide" role="group" aria-label="1 / 9"
+          style="width: 1592px;">Slide 1</div>
+        <div class="swiper-slide" role="group" aria-label="2 / 9"
+          style="width: 1592px;">Slide 2</div>
+        <div class="swiper-slide" role="group" aria-label="3 / 9"
+          style="width: 1592px;">Slide 3</div>
+        <div class="swiper-slide swiper-slide-prev" role="group"
+          aria-label="4 / 9" style="width: 1592px;">Slide 4</div>
+        <div class="swiper-slide swiper-slide-active" role="group"
+          aria-label="5 / 9" style="width: 1592px;">Slide 5</div>
+        <div class="swiper-slide swiper-slide-next" role="group"
+          aria-label="6 / 9" style="width: 1592px;">Slide 6</div>
+        <div class="swiper-slide" role="group" aria-label="7 / 9"
+          style="width: 1592px;">Slide 7</div>
+        <div class="swiper-slide" role="group" aria-label="8 / 9"
+          style="width: 1592px;">Slide 8</div>
+        <div class="swiper-slide" role="group" aria-label="9 / 9"
+          style="width: 1592px;">Slide 9</div>
+      </div>
+      <div class="swiper-button-next" tabindex="0" role="button"
+        aria-label="Next slide"
+        aria-controls="swiper-wrapper-3c7f10d0911a7b1062"
+        aria-disabled="false"></div>
+      <div class="swiper-button-prev" tabindex="0" role="button"
+        aria-label="Previous slide"
+        aria-controls="swiper-wrapper-3c7f10d0911a7b1062"
+        aria-disabled="false"></div>
+      <div
+        class="swiper-pagination swiper-pagination-progressbar swiper-pagination-horizontal"><span
+          class="swiper-pagination-progressbar-fill"
+          style="transform: translate3d(0px, 0px, 0px) scaleX(0.555556) scaleY(1); transition-duration: 300ms;"></span></div>
+      <span class="swiper-notification" aria-live="assertive"
+        aria-atomic="true"></span></div>
+
+    <!-- Swiper JS -->
+    <script src="./Swiper demo_files/swiper-bundle.min.js.download"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        type: "progressbar",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+  </body>
+</html>

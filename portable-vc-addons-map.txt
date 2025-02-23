@@ -1,0 +1,18 @@
+portable-vc-addons/
+│── portable-vc-addons.php  // Main plugin file
+│── includes/
+│   ├── class-init.php       // Handles initialization
+│   ├── class-shortcodes.php // Registers shortcodes
+│   ├── class-assets.php     // Handles scripts & styles
+│── addons/
+│   ├── post-slider/
+│   │   ├── post-slider.php  // Registers post slider addon
+│   │   ├── views/
+│   │   │   ├── slider-layout-1.php
+│   │   │   ├── slider-layout-2.php
+│── assets/
+│   ├── css/
+│   │   ├── style.css
+│   ├── js/
+│   │   ├── script.js
+│── readme.txt
