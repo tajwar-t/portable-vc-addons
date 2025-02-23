@@ -15,9 +15,3 @@ class Portable_VC_Addons_Assets {
 }
 
 new Portable_VC_Addons_Assets();
-
-function enqueue_custom_slider_scripts() {
-
-    wp_enqueue_script('custom-slider-js', get_template_directory_uri() . '/assets/js/custom-slider.js', array('swiper-js'), null, true);
-}
-add_action('wp_enqueue_scripts', 'enqueue_custom_slider_scripts');
