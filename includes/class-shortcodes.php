@@ -6,6 +6,7 @@ if (!defined('ABSPATH')) {
 class Portable_VC_Addons_Shortcodes {
     public function __construct() {
         add_shortcode('portable_vc_post_slider', array($this, 'render_post_slider'));
+        add_shortcode('portable_vc_single_post', array($this, 'render_single_post'));
     }
 
     public function render_post_slider($atts) {
@@ -26,6 +27,29 @@ class Portable_VC_Addons_Shortcodes {
 
         ob_start();
         include PORTABLE_VC_ADDONS_PATH . "addons/post-slider/views/{$atts['layout']}.php";
+        return ob_get_clean();
+    }
+
+    // Shortcode function
+    public function render_single_post($atts) {
+        $atts = shortcode_atts(array(
+            'post_id'     => '',
+            'layout'      => 'layout-1',
+        ), $atts);
+        
+        if (empty($atts['post_id'])) {
+            return __('No post selected.', 'portable-vc-addons');
+        }
+        
+        $post = get_post($atts['post_id']);
+        if (!$post) {
+            return __('Post not found.', 'portable-vc-addons');
+        }
+        // var_dump(PORTABLE_VC_ADDONS_PATH . "addons/single-post/views/post-{$atts['layout']}.php"); die;
+        ob_start();
+        // include PORTABLE_VC_ADDONS_PATH . "addons/post-slider/views/{$atts['sp_layout']}.php";
+        include PORTABLE_VC_ADDONS_PATH . "addons/single-post/views/post-{$atts['layout']}.php";
+
         return ob_get_clean();
     }
 }
