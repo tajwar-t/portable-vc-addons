@@ -2,7 +2,7 @@
 /*
 Plugin Name: Portable VC Addons
 Description: Customized addons for WPBakery Builder.
-Version: 1.0
+Version: 1.1.0
 Author: Your Name
 */
 
