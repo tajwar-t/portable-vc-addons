@@ -22,6 +22,7 @@ class Portable_VC_Addons_Init {
         require_once PORTABLE_VC_ADDONS_PATH . 'includes/class-shortcodes.php';
         require_once PORTABLE_VC_ADDONS_PATH . 'includes/class-assets.php';
         require_once PORTABLE_VC_ADDONS_PATH . 'addons/post-slider/post-slider.php';
+        require_once PORTABLE_VC_ADDONS_PATH . 'addons/single-post/single-post.php';
     }
 
     private function init_hooks() {
