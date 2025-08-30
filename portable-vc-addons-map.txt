@@ -10,6 +10,15 @@ portable-vc-addons/
 │   │   ├── views/
 │   │   │   ├── slider-layout-1.php
 │   │   │   ├── slider-layout-2.php
+|   |── single-post/
+|   |   |── single-post.php
+│   │   ├── views/
+│   │   │   ├── post-layout-1.php
+|   |── hover-box/
+|   |   |── wpbakery-hover-box.php
+│   │   ├── assets/
+│   │   │   ├── css/
+│   │   │   |   ├── vc-hover-box.css
 │── assets/
 │   ├── css/
 │   │   ├── style.css

@@ -1,0 +1,19 @@
+.responsive-table {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.responsive-table table {
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .responsive-table table {
+        font-size: 14px;
+    }
+
+    .responsive-table th,
+    .responsive-table td {
+        white-space: nowrap;
+    }
+}

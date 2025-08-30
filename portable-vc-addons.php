@@ -2,8 +2,8 @@
 /*
 Plugin Name: Portable VC Addons
 Description: Customized addons for WPBakery Builder.
-Version: 1.1.0
-Author: Your Name
+Version: 1.3.0
+Author: Tajwar
 */
 
 // Exit if accessed directly
@@ -18,7 +18,7 @@ define('PORTABLE_VC_ADDONS_PATH', plugin_dir_path(__FILE__));
 define('PORTABLE_VC_ADDONS_URL', plugin_dir_url(__FILE__));
 
 // Include the main initialization file
-require_once PORTABLE_VC_ADDONS_PATH . 'includes/class-init.php';
+require PORTABLE_VC_ADDONS_PATH . 'includes/class-init.php';
 
 // Initialize the plugin
 if (class_exists('Portable_VC_Addons_Init')) {
