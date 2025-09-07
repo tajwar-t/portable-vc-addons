@@ -47,4 +47,3 @@ Tajwar
 ### **1.3.0**
 
 * Initial release with Post Slider, Single Post, Hover Box, and Custom Table addons.
-

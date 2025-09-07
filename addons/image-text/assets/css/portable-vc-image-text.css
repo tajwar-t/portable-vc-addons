@@ -1,0 +1,17 @@
+.portable-vc-image-text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.portable-vc-image img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    width: 20px;
+}
+
+.portable-vc-text p{
+    margin: 0; /* override WPBakery default margins */
+}
