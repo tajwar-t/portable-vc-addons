@@ -2,8 +2,8 @@
 /*
 Plugin Name: Portable VC Addons
 Description: Customized addons for WPBakery Builder.
-Version: 1.3.0
-Author: Tajwar
+Version: 1.3.1
+Author: Danesh Exchange
 */
 
 // Exit if accessed directly

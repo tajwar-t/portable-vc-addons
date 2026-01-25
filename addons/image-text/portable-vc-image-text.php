@@ -127,7 +127,16 @@ function portable_vc_image_text_output($atts, $content = null) {
         $text_style .= 'font-weight:' . esc_attr($atts['font_weight']) . ';';
     }
 
-    $img_html = $image_url ? '<div class="portable-vc-image"><img src="' . esc_url($image_url) . '" alt="" style="' . $img_style . '"></div>' : '';
+    $image_id = isset($atts['image']) ? intval($atts['image']) : 0;
+    $image_url = wp_get_attachment_image_url($image_id, 'full');
+    $image_alt = get_post_meta($image_id, '_wp_attachment_image_alt', true);
+    
+    $img_html = $image_url 
+        ? '<div class="portable-vc-image">
+             <img src="'. esc_url($image_url) .'" alt="'. esc_attr($image_alt) .'" style="'. esc_attr($img_style) .'">
+           </div>'
+        : '';
+    //$img_html = $image_url ? '<div class="portable-vc-image"><img src="' . esc_url($image_url) . '" alt="" style="' . $img_style . '"></div>' : '';
     $text_html = '<div class="portable-vc-text" style="' . $text_style . '">' . $content . '</div>';
 
     $html = '<div class="portable-vc-image-text ' . $custom_class . '">';
