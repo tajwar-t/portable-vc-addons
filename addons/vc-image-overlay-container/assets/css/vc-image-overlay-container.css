@@ -1,0 +1,21 @@
+.portable-overlay-container {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  padding: 40px 20px;
+  color: #ffffff;
+  border-radius: 25px;
+}
+
+.portable-overlay {
+  position: absolute;
+  inset: 0;
+  border-radius: 25px;
+}
+
+.portable-overlay-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  text-align: center;
+}

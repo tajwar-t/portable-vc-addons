@@ -26,6 +26,7 @@ class Portable_VC_Addons_Init {
         require_once PORTABLE_VC_ADDONS_PATH . 'addons/hover-box/wpbakery-hover-box.php';
         require_once PORTABLE_VC_ADDONS_PATH . 'addons/custom-table/vc-html-table.php';
         require_once PORTABLE_VC_ADDONS_PATH . 'addons/image-text/portable-vc-image-text.php';
+        require_once PORTABLE_VC_ADDONS_PATH . 'addons/vc-image-overlay-container/vc-image-overlay-container.php';
     }
 
     private function init_hooks() {
