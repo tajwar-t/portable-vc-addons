@@ -59,8 +59,24 @@ if ($post) {
     $featured_image_url = get_the_post_thumbnail_url($post->ID, 'large'); // Custom size
     $post_title = esc_attr($post->post_title);
     // Prepare the heading content
-    $heading_content = $post->post_excerpt ? $post->post_excerpt : wp_trim_words($post->post_content, 100);
-    $heading_content .= '...<a href="' . get_permalink($post->ID) . '">Read More</a>';
+// Get content (excerpt preferred)
+$content = $post->post_excerpt ?: $post->post_content;
+
+// Render WPBakery shortcodes
+$content = apply_filters('the_content', $content);
+
+// Remove scripts & styles just in case
+$content = preg_replace('#<style.*?</style>#si', '', $content);
+$content = preg_replace('#<script.*?</script>#si', '', $content);
+
+// Strip HTML
+$content = wp_strip_all_tags($content);
+
+// Trim words
+$heading_content = wp_trim_words($content, 100);
+
+// Read more
+$heading_content .= '... <a href="' . get_permalink($post->ID) . '">Read More</a>';
     
     // Build the dynamic shortcode
     $shortcode = sprintf(
